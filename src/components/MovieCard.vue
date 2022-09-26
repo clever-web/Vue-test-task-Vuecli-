@@ -1,14 +1,14 @@
 <template>
     <div>
         <div class="card-body">
-            <div class="card-cover-img"></div>
-            <div class="card-title"></div>
-            <div class="card-description"></div>
+            <div :style="{'background-image': `url(${movie.poster})`}"  class="card-cover-img"></div>
+            <p class="card-title">{{movie.name}}</p>
+            <p class="card-description">{{movie.description}}</p>
             <div class="tags">
-                <ul>
-                    <li><a href="">Score</a></li>
-                    <li><a href="">Genre</a></li>
-                    <li><a href="">Duration</a></li>
+                <ul class="badges-list">
+                    <li><a href="">{{movie.rating}}</a></li>
+                    <li><a href="">{{movie.genre}}</a></li>
+                    <li><a href="">{{movie.duration}}</a></li>
                 </ul>
             </div>
         </div>
@@ -23,3 +23,7 @@
         },
     }
 </script>
+
+<style scoped>
+    @import "../assets/styles/common.css";
+</style>

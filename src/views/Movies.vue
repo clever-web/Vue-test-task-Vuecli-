@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div 
-                    class="col"
+                    class="col-sm-12 col-md-4 col-lg-3 mb-4"
                     v-for="movie in movielist"
                     :key="movie.id"
                 >
@@ -28,7 +28,6 @@ export default {
         }).then(
             (response) => {
                 this.movielist = response.data;
-                console.log("ddddddddddddddd")
             },
             (error) => {
                 console.error(error)
@@ -46,3 +45,6 @@ export default {
     },
 }
 </script>
+<style>
+    @import "../assets/styles/common.css";
+</style>
