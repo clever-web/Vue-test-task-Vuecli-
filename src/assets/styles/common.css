@@ -13,7 +13,7 @@
     background-color: #292d32;
     padding: 12px;
     width: 324px;
-    height: 306px;
+    /* height: 324px; */
     border-radius: 16px;
 }
 .card-cover-img {
@@ -51,4 +51,45 @@
     overflow-y: hidden;
 }
 
-.badges-list 
+.badges-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.badge-item {
+    padding: 2px 6px;
+    border-radius: 8px;
+    margin-right: 8px;
+    background-color: black;
+}
+.badge-icon {
+    margin-right: 2.67px;
+    height: auto;
+    width: 7px;
+}
+
+.badge-text {
+    font-weight: 500;
+    font-size: 11px;
+    font-family: 'Roboto';
+    color: #FFFFFF;
+}
+
+.badge-success {
+    background-color: #039c55;
+  }
+  
+  .badge-blue {
+    background-color: #2c81fb;
+  }
+  
+  .badge-purple {
+    background-color: #702bfe;
+  }
+  
+  .badge-red {
+    background-color: #e81a0c;
+  }
+a:hover {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
