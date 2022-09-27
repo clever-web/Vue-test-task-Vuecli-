@@ -1,6 +1,6 @@
-.home {
-    background: #1E1E1E;
-}
+/* .home {
+    background: black;
+} */
 
 .container-fluid {
     max-width: 1440px;
@@ -49,6 +49,10 @@
     color: #FFFFFF;
     text-align: left;
     overflow-y: hidden;
+}
+
+.card-hover:hover {
+    box-shadow: 8px 8px 0px #702bfe;
 }
 
 .badges-list {

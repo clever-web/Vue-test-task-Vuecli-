@@ -1,5 +1,6 @@
 <template>
     <div class="home">
+        <Header />
         <div class="container-fluid">
             <div class="row">
                 <div 
@@ -11,11 +12,14 @@
                 </div>
             </div>
         </div>
+        <Footer />
     </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import Header from "@/layouts/Header.vue";
+import Footer from "@/layouts/Footer.vue";
 import MovieCard from "@/components/MovieCard.vue";
 import axios from "axios";
 
@@ -36,13 +40,14 @@ export default {
     },
     data() {
         return {
-            movielist: [],
-            selectedMovie: "",
+            movielist: []
         };
     },
     components: {
-        MovieCard,
-    },
+    MovieCard,
+    Header,
+    Footer
+},
 }
 </script>
 <style>
