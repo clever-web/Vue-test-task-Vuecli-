@@ -7,7 +7,19 @@
     margin-top: 132px;
 }
 
+.container {
+    margin-top: 150px;
+}
+
 /* Card Style */
+
+.row .card {
+    border: 3px solid transparent;
+    color: white;
+    background-color: #292d32;
+    cursor: pointer;
+    border-radius: 16px !important;
+}
 
 .card-body {
     background-color: #292d32;
@@ -55,6 +67,15 @@
     box-shadow: 8px 8px 0px #702bfe;
 }
 
+.card:active {
+    box-shadow: none;
+    border: 3px solid #702bfe;
+}
+
+.desc-img {
+    max-width: 300px;
+}
+
 .badges-list {
     list-style-type: none;
     padding-left: 0;
@@ -64,6 +85,8 @@
     border-radius: 8px;
     margin-right: 8px;
     background-color: black;
+    display: flex;
+    align-items: center;
 }
 .badge-icon {
     margin-right: 2.67px;
@@ -93,7 +116,15 @@
   .badge-red {
     background-color: #e81a0c;
   }
-a:hover {
+a, a:hover {
     color: #FFFFFF !important;
     text-decoration: none !important;
+}
+
+.details .container {
+    min-height: calc(100vh - 273px);
+}
+.align-left {
+    text-align: left;
+    color: white;
 }
